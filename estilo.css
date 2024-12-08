@@ -1,0 +1,149 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+}
+/*Alternar entre tema escuro e tema claro*/
+body.claro {
+  background-image: linear-gradient(#fd8b22,#fff4d3);
+  
+  color: #000000;
+}
+
+body.escuro {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  
+}
+
+button.claro {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+button.escuro {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Estilizando o header com efeito parallax */
+.cabecalho {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+#cenario, #cenario2 {
+  position: relative;
+  width: 100%;
+  height: 100vh !important;
+}
+
+
+.topo, .topo2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+/* Oculta por padrão */
+#cenario {
+  display: none;}
+
+#cenario .topo, #cenario2 .topo2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.top1 {
+  background-image: url('./Imagens/Fundo.png');
+}
+
+.top2 {
+  background-image: url('./Imagens/lua.png');
+}
+
+.top3 {
+  background-image: url('./Imagens/lobo.png');
+}
+.top4 {
+  background-image: url('./Imagens/Fundo2.png');
+}
+
+.top5 {
+  background-image: url('./Imagens/mata.png');
+}
+
+.top6 {
+  background-image: url('./Imagens/sol.png');
+}
+.top7 {
+  background-image: url('./Imagens/morro.png');
+}
+.top8 {
+  background-image: url('./Imagens/lobo2.png');
+}
+
+/*Menu de Navegação*/
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+nav ul li a:hover {
+  color: #ff6b6b;
+}
+
+/*Texto no cabeçalho*/
+.header-content {
+  position: absolute;
+  top: 10%;  
+  color: white;
+  text-align: right;
+  z-index: 10;
+}
+#po{
+  text-align: left;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+}
+
+.header-content p {
+  font-size: 1.5rem;
+}
+
+/* Seções abaixo do header */
